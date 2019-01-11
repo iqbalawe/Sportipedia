@@ -17,14 +17,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".FutsalActivity"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".BadmintonActivity"
             android:parentActivityName=".MainActivity" />
-
+        <activity android:name=".BookingFutsalActivity"/>
     </application>
 
 </manifest>

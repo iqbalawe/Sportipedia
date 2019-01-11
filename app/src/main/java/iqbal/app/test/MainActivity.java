@@ -1,11 +1,14 @@
 package iqbal.app.test;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 import iqbal.app.test.adapter.ContainerAdapter;
 import iqbal.app.test.fragment.HomeFragment;
@@ -16,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private ContainerAdapter adapter;
     private BottomNavigationView navigationView;
     private ViewPager vp;
+    private Button bookFutsal, bookBadminton;
 
 
     @Override
@@ -25,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
 
         vp = (ViewPager) findViewById(R.id.container);
         navigationView = (BottomNavigationView) findViewById(R.id.navigationView);
+        bookFutsal = (Button) findViewById(R.id.btn_arena);
+        bookBadminton = (Button) findViewById(R.id.btn_gsc);
 
         setContainerPrepared();
         onButtonClicked();
